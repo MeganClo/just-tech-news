@@ -2,7 +2,7 @@ const Sequelize = require('sequelize');
 
 require('dotenv').config();
 
-let sequilize;
+let sequelize;
 
 if (process.env.JAWSDB_URL) {
   sequelize = new Sequelize(process.env.JAWSDB_URL);
@@ -13,7 +13,5 @@ if (process.env.JAWSDB_URL) {
     port: 3306
   });
 }
-// create connection to our db
-
 
 module.exports = sequelize;
